@@ -1,0 +1,52 @@
+.card {
+  border: 1px solid $color-header;
+  box-shadow: 0px 0px 4px $color-header-shadow;
+  width: 100%;
+  border-radius: 5px;
+  margin: 20px 0px;
+  &_header {
+    text-align: center;
+    padding: 5px;
+
+    &--title {
+      color: $color-text-white;
+    }
+  }
+  &_content {
+    border-top: 1px solid $color-header;
+    padding: 6px;
+    color: $color-card-title;
+
+    &_container {
+      display: flex;
+      justify-content: center;
+
+      &--box {
+        background-color: $color-header-shadow;
+        padding: 4px 22px;
+        text-align: center;
+        border-radius: 5px;
+        margin: 5px 15px;
+        cursor: pointer;
+        color: #fff;
+        &:hover {
+          background-color: $color-text-box-hover;
+        }
+      }
+    }
+  }
+}
+
+.box_title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.box_price {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.selected {
+  background-color: $color-text-box-hover;
+}

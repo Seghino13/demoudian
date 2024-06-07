@@ -1,0 +1,45 @@
+@import './abstracts/abstracts';
+@import './components/card';
+
+mat-drawer-content {
+  height: 100vh !important;
+  background-color: $color-backgorund;
+}
+
+body {
+  background-color: $color-backgorund;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar-single-row {
+  background-color: $color-header !important;
+}
+
+.mat-toolbar {
+  color: $color-text-white !important;
+}
+
+.container {
+  padding: 10px 2px;
+  align-items: normal !important;
+}
+
+.mat-drawer-inner-container {
+  width: 280px !important;
+  background-color: $color-backgorund;
+  color: #fff;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+h6 {
+  font-size: 30px !important;
+}
+
+h4 {
+  font-size: 20px !important;
+  font-weight: 200;
+}

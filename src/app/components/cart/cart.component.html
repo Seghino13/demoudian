@@ -1,0 +1,9 @@
+<div *ngIf="winner" class="container">
+  <h6>{{ winner.name }} to WIN</h6>
+  <h4>{{ winner.price }}</h4>
+  <button mat-stroked-button color="warn" (click)="emptyCart()">Delete</button>
+</div>
+
+<div *ngIf="!winner" class="container">
+  <h4>List is empty</h4>
+</div>

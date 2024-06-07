@@ -1,0 +1,23 @@
+<div *ngFor="let event of events">
+  <div class="card" *ngIf="event.markets.length > 0">
+    <div class="card_header">
+      <div class="card_header--title">
+        <h4>{{ event?.name }}</h4>
+      </div>
+    </div>
+    <div class="card_content" *ngFor="let market of event?.markets">
+      <h4>{{ market?.name }}:</h4>
+      <div class="card_content_container">
+        <div
+          class="card_content_container--box"
+          [ngClass]="{ selected: selection?.name === winner?.name }"
+          *ngFor="let selection of market?.selections"
+          (click)="addBet(selection)"
+        >
+          <p class="box_title">{{ selection?.name }}</p>
+          <p class="box_price">{{ selection?.price }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
